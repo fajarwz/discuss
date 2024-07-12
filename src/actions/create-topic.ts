@@ -70,6 +70,6 @@ export async function createTopic(
         }
     }
 
-    revalidatePath('/')
+    revalidatePath(paths.home())
     redirect(paths.topicShow(topic.slug))
 }
